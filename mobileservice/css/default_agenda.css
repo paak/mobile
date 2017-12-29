@@ -1,0 +1,103 @@
+html,body{height:100%;max-height:100%;font-size:12px;background-color:#CCCCCC;color:#5d6454}
+html,body,p,br,table,td,tr,img,a,input,textarea,ul,li,h1,h2,h3,h4,h5,h6{margin:0;padding:0;outline:none;line-height:18px;
+font-family:Verdana,Geneva,sans-serif;font-size:12px}
+
+.main_bg{background:url(../images/bg/bg.png) repeat-y scroll center center / cover transparent;height:100%}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:400}
+ul,ol{margin:0 0 20px 20px;padding:0 0 0 20px}
+p,.paragraph{margin-bottom:20px}
+.center{text-align:center}
+
+h1{font:bold 22px Verdana;margin:0 0 20px;color:#716f70}
+h2{font:bold 20px Verdana;margin:0 0 20px;color:#716f70}
+h3{font:bold 18px Verdana;margin:0 0 5px;color:#716f70}
+
+.normal_text{display:inline-block;font-size:12px;font-weight:400}
+
+a:link{color:#ffcc33;font-size:12px;text-decoration:none}
+
+a:visited{color:#ffcc33}
+a:hover{text-decoration:underline}
+a:active{color:#ffcc33}
+.clear{clear:both;height:0}
+.no_margin{margin:0}
+table{border-spacing:0;border-collapse:collapse}
+.remark_text{color:#ffcc33;font-weight:700}
+/*.content_wrapper{margin:20px 0}*/
+.container,.container-fluid{padding:0}
+#main_content_wrapper{
+	background: url(../images/bg/bg.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;	
+  width:100%;
+  padding:20px 20px 5px
+}
+#logo_mainbox{width:100%;height:100px;background:url(../images/header_center.png) repeat-x}
+#logo_img{width:300px;height:100px;float:left}
+#main_content{width:100%;background:url(../images/White_BG_01.png) repeat;
+    position:relative}
+/*#main_content{position:relative;width:100%/*width:100%;padding:20px 20px 5px;position:relative;background:url(../images/bg/bg.png) repeat-y scroll center center / cover transparent;height:100%*/
+  background: url(../images/bg/bg.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.page_title{color:#fff;font-size:14px;margin:0}
+.body_title{color:#ffcc33;font-size:13px;font-weight:700;margin-bottom:15px}
+panel-success > .panel-heading{background:#000000}
+
+.page_title_header{color:#ff9900;font-size:15px;margin:0}
+
+
+.std_table p{margin:0}
+.std_table{border-collapse:collapse;width:100%;margin-bottom:20px}
+.std_table td,.std_table th{border:1px solid #ff9900;font-size:12px;padding:6px 3px}
+.std_table th{background-color:#ff9900;border-right:1px solid #ff9900;color:#ff9900;
+font-size:12px;font-weight:700;padding:6px 0;text-align:center}
+
+.std_table th.time{width:20%}
+.std_table th.program{width:32%}
+.std_table th.venue{width:32%}
+.std_table th.dress{width:28%}
+.std_table.noborder td,.std_table.noborder th{border:none}
+.agenda_table{margin:0,width:100%}
+.agenda_table td,.std_table td.table_header2,.bus_table td{text-align:center}
+.std_table td{background:#f7faf5}
+
+
+/*#agenda_container .panel-body{padding:3px}*/
+.agenda_table.std_table th,.bus_table th{background-color:#CCCCCC;border-right:1px solid #ff9900;color:#CCCCCC}
+.std_table td.agenda_date,.std_table td.table_header2{background:#ff9900;color:#ffffff;font-weight:700;text-align:center}
+.contact_table td{width:25%}
+.bus_table .bustime{font-weight:700;font-size:12px;color:;text-align:center}
+
+
+a.link_button{color:#fff}
+#shutterbus_link{position:absolute;right:20px;top:-70px}
+.link_button_box{display:block;margin-bottom:20px;text-align:right}
+.sponsor_container{margin:0 auto;min-width:300px}
+.sponsor_logo_entry{float:left;margin:5px;text-align:center}
+
+
+/*--------Change color for header----------------------------*/
+.panel-success > .panel-heading {
+    background-color: #CCCCCC;
+    border-color: #ffcc33;
+    color: #ff9933; /*--Header change*/
+}
+.panel-success > .panel-body {
+   
+    border-color: #ff9900;
+    
+}
+
+
+/*.panel-success > .panel-heading.gold_sponsor{background:#ff9933}
+.panel-success > .panel-heading.silver_sponsor{background:#878787}*/
+
+.nopadding{padding:0 !important}
+/*.panel-success,.panel{background:none}*/

@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html ng-app="wcaApp">
+<head>
+    <title>WCA World</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="content/animations.css" rel="stylesheet" />
+    <link href="content/styles.css" rel="stylesheet" />
+</head>
+<body ng-cloak>
+
+    <header class="navbar navbar-inner navbar-fixed-top" ng-controller="NavbarController as vm">
+        <nav class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" ng-click="vm.isCollapsed = !vm.isCollapsed">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#/">
+                    <span class="appTitle">{{ vm.appTitle }}</span>
+                </a>
+            </div>
+            <div class="nav-container" data-collapse="vm.isCollapsed">
+
+                <!-- With menu-highlighter directive -->
+                <ul class="nav navbar-nav nav-pills navBarPadding"
+                    menu-highlighter highlight-class-name="active">
+                    <li><a ng-href="#!/home">Customers</a></li>
+                    <li><a ng-href="#!/orders">Orders</a></li>
+                    <li><a ng-href="#!/about">About</a></li>
+                    <li id="nav-login" ng-click="vm.loginOrOut()">
+                        <!-- href not used but needed to compare against path in menu-highlighter -->
+                        <a data-href="#/login">{{ vm.loginLogoutText }}</a>
+                    </li>
+                </ul>
+
+                <!-- Without menu-highlighter directive -->
+                <!--<ul class="nav navbar-nav nav-pills navBarPadding">
+                    <li ng-class="{'active': vm.highlight('/customers')}"><a href="#/customers">Customers</a></li>
+                    <li ng-class="{'active': vm.highlight('/orders')}"><a href="#/orders">Orders</a></li>
+                    <li ng-class="{'active': vm.highlight('/about')}"><a href="#/about">About</a></li>
+                    <li ng-class="{'active': vm.highlight('/login')}" id="nav-login"
+                        ng-click="vm.loginOrOut()">
+                        <a>{{ vm.loginLogoutText }}</a>
+                    </li>
+                </ul>-->
+            </div>
+        </nav>
+    </header>
+
+    <div class="slide-animation-container">
+        <div ng-view id="ng-view" class="slide-animation"></div>
+    </div>
+
+    <div id="footer">
+        <div class="navbar navbar-fixed-bottom">
+            <div class="navbar-inner footer">
+                <div class="container">
+                    <footer>
+                        <div class="row">
+                            <div class="col-md-12">
+                                Created by <a href="http://twitter.com/DanWahlin" target="_blank">Dan Wahlin</a>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3rd party libraries -->
+    <script src="scripts/libs/angular-1.6.6/angular.min.js"></script>
+    <script src="scripts/libs/angular-1.6.6/angular-route.min.js"></script>
+    <script src="scripts/libs/angular-1.6.6/angular-animate.min.js"></script>
+
+    <!-- Custom scripts -->
+    <script src="app/app.js"></script>
+    <script src="app/services/authService.js"></script>
+    <script src="app/services/httpInterceptors.js"></script>
+    <script src="app/controllers/navbarController.js"></script>
+    <script src="app/controllers/loginController.js"></script>
+    <script src="app/controllers/homeController.js"></script>
+    <script src="app/controllers/aboutController.js"></script>
+
+</body>
+</html>
+
+

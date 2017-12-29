@@ -1,0 +1,6 @@
+.sponsor_container{min-width:100%;}
+.sponsor_logo_entry img{width:230px}
+.logo_mainbox img{display:block;height:auto;max-width:100%;}
+.agenda_table td,.agenda_table th,.agenda_table td p,.bus_table td,.bus_table td.bustime,.bus_table th,.bus_table td p{font-size:10px;}
+#main_content_wrapper{padding:20px 10px 5px}
+#shutterbus_link{background: #72d990;color:#034b2e;float:right;margin:10px 5px 0 0;position:inherit;right:0;top:0;}

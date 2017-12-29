@@ -1,0 +1,8 @@
+/* Landscape iphone5*/
+@import "layout_media_phone_landscape.css" screen and (max-width: 568px);
+
+/* Landscape phones*/
+@import "layout_media_phone_landscape.css" screen and (max-width: 480px);
+
+/* Portrait phones*/
+@import "layout_media_phone.css" screen and (max-width: 320px);
